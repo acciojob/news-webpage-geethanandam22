@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +8,12 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5; /* given body background color */
+      background-color: #f5f5f5; /* body background */
     }
 
     /* Header */
-    .header {
-      background-color: #011e29; /* given header background color */
+    header {
+      background-color: #011e29; /* given header color */
       color: white;
       text-align: center;
       padding: 20px;
@@ -39,8 +38,27 @@
     }
 
     .latest-news-section li {
-      margin: 10px 0;
+      margin: 8px 0;
       font-size: 16px;
+    }
+
+    /* Main Article Section */
+    .main-article-section {
+      background-color: white;
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .main-article-section h2 {
+      margin-top: 0;
+      color: #011e29;
+    }
+
+    .main-article-section p {
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     /* Pictorial News Section */
@@ -64,34 +82,46 @@
       object-fit: cover;
       margin: 10px;
       border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
 
   <!-- Header -->
-  <header class="header">
-    <h1>News Webpage</h1>
+  <header>
+    <h1>Daily News</h1>
   </header>
 
   <!-- Latest News Section -->
   <div class="latest-news-section">
     <h2>Latest News</h2>
     <ul>
-      <li>Breaking: New technology trends emerging in 2025</li>
-      <li>Sports: Team India secures a thrilling victory</li>
-      <li>World: Global leaders meet for climate summit</li>
+      <li>India witnesses record rainfall this January.</li>
+      <li>Adani Group stocks face sharp market swings.</li>
+      <li>Massive protests erupt in France over pension reforms.</li>
     </ul>
+  </div>
+
+  <!-- Main Article Section -->
+  <div class="main-article-section">
+    <h2>Main Article</h2>
+    <p>
+      Today’s top story highlights the changing global landscape where climate events,
+      financial markets, and socio-political developments are shaping the future.
+      From record-breaking rainfall in India, to significant financial events involving
+      major corporations, and widespread protests in Europe, the world is witnessing 
+      impactful moments. Stay tuned as we bring you detailed coverage and analysis.
+    </p>
   </div>
 
   <!-- Pictorial News Section -->
   <div class="pictorial-news-section">
     <h3>Pictorial News</h3>
-	   <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="News Image One">
-    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="News Image Two">
-    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="News Image Three">
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Delhi Rains">
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Adani News">
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="France Protests">
   </div>
-   
 
 </body>
 </html>
